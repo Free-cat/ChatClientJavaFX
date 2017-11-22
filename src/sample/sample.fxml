@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="376.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="14.0" layoutY="22.0" text="Номер порта" />
+      <Label layoutX="15.0" layoutY="51.0" text="Адрес сервера" />
+      <Label layoutX="16.0" layoutY="82.0" text="Имя пользователя" />
+      <TextField id="port" fx:id="port" layoutX="180.0" layoutY="17.0" text="8901" />
+      <TextField id="ip" fx:id="ip" layoutX="180.0" layoutY="46.0" text="127.0.0.1" />
+      <TextField id="name" fx:id="name" layoutX="180.0" layoutY="77.0" text="No name" />
+      <Button fx:id="join" defaultButton="true" layoutX="17.0" layoutY="119.0" mnemonicParsing="false" onAction="#pressbutton" text="Присоединится" />
+      <TextArea fx:id="textArea1" layoutX="16.0" layoutY="164.0" prefHeight="200.0" prefWidth="200.0" text="--------------------------------" />
+      <Button fx:id="offline" cancelButton="true" disable="true" layoutX="155.0" layoutY="119.0" mnemonicParsing="false" onAction="#pressOfline" text="Отключится" />
+   </children>
+</AnchorPane>
